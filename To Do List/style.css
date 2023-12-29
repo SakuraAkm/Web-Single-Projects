@@ -16,6 +16,7 @@ html {
 body {
     font-family: 'Gill Sans', sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS';
     background: linear-gradient(45deg, red, blueviolet, black);
+    background-attachment: fixed;
     color: white;
 }
 
