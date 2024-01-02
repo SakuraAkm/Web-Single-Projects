@@ -162,7 +162,6 @@ main {
 
 main {
     margin-left: 5rem;
-    padding: 1rem 0;
 }
 
 #pointers-sections {
@@ -185,6 +184,7 @@ main {
 }
 
 /* GAME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 
 .row {
     column-gap: 2rem;
@@ -237,10 +237,6 @@ main {
 
 .w-100 {
     width: 100%;
-}
-
-.container {
-    max-width: 90%;
 }
 
 .mx-auto {
@@ -297,6 +293,14 @@ main {
         min-height: 79.55vh;
     }
 
+    .container {
+        max-width: 85%;
+    }
+
+    .game-container {
+        max-width: 85%;
+    }
+
     main {
         margin-left: 0;
         margin-bottom: 5rem;
@@ -344,6 +348,14 @@ main {
 
     .vh-100 {
         min-height: 100vh;
+    }
+
+    .container {
+        max-width: 75%;
+    }
+
+    .game-container {
+        max-width: 50%;
     }
 
     svg {
