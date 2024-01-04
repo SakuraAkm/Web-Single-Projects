@@ -6,7 +6,7 @@
     --bg-light: rgb(255, 255, 255);
     --bg-menu: rgb(37, 37, 45);
     --bg-hover: rgb(31, 31, 31);
-    --body-hover-dark: rgba(48, 48, 56, 0.75);
+    --body-hover-dark: rgba(48, 48, 56, 0.70);
     --body-hover-light: rgba(255, 255, 255, 0.5)
 }
 
@@ -158,13 +158,53 @@ main {
     color: var(--text-hover);
 }
 
-/* HOME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 main {
     margin-left: 5rem;
 }
 
-#pointers-sections {
+#language {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px var(--text) solid;
+    padding: 0.8rem 1.7rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+#language img {
+    position: fixed;
+    right: 4rem;
+    width: 1.2rem;
+    transition: all 0.3s;
+}
+
+.toggle-switch {
+    transform: translateX(1.7rem);
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+#language:hover {
+    background: var(--bg-dark);
+}
+
+/* HOME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#home h1 {
+    font-size: 2rem;
+}
+
+#home h3 {
+    padding: 1rem 0;
+}
+
+#pointers-section {
     height: 100vh;
     position: fixed;
     display: flex;
@@ -183,10 +223,45 @@ main {
     margin-top: auto;
 }
 
+/* POSTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#posts h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.posts-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 5rem;
+    margin: 3rem 0;
+}
+
+.card {
+    height: 100%;
+    max-width: 20rem;
+    background-color: var(--bg);
+    border-radius: 10px;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.card h2 {
+    padding: 0.5rem;
+}
+
+.card p {
+    padding-bottom: 1rem;
+    margin-inline: 1.3rem;
+}
+
 /* GAME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-.row {
+.RPS-row {
     column-gap: 2rem;
 }
 
@@ -215,7 +290,53 @@ main {
 
 /* CONTACT US ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#contact-us {}
+#contact-us h1 {
+    font-size: 2rem;
+}
+
+#contact-us h2 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+#contact-us button {
+    font-size: 1rem;
+    background-color: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+    padding: 0.75rem 1.1rem;
+    border-radius: 100px;
+    border: none;
+    transition: all 0.2s;
+}
+
+#contact-us button:hover {
+    transform: scale(1.1);
+}
+
+#contact-us input,
+#contact-us textarea {
+    width: 20rem;
+    font-size: 0.9rem;
+    background-color: var(--bg);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
+    transition: all 0.2s;
+}
+
+#contact-us textarea {
+    min-height: 8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contact-us input:focus,
+#contact-us textarea:focus,
+#contact-us button:focus,
+#contact-us button:hover {
+    outline: 1.5px var(--text-hover) groove;
+    box-shadow: 0 0 1rem rgb(123, 35, 231);
+}
 
 /* PRESETS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -293,8 +414,16 @@ main {
         min-height: 79.55vh;
     }
 
+    #home {
+        padding-top: 2rem;
+    }
+
     .container {
         max-width: 85%;
+    }
+
+    #contact-us h1 {
+        margin-top: 1rem;
     }
 
     .game-container {
@@ -314,7 +443,7 @@ main {
 
     svg {
         margin-top: 0.6rem;
-        min-width: 4.5rem;
+        min-width: 4.0rem;
         max-width: 4.5rem;
     }
 
@@ -328,6 +457,21 @@ main {
 
     .nav-link {
         justify-content: center;
+    }
+
+    #pointers-section {
+        flex-direction: row;
+        width: 100vw;
+        left: 18rem;
+        top: 10rem;
+    }
+
+    .pointer {
+        padding-inline: 1.4%;
+    }
+
+    .rotate-arrow {
+        transform: rotate(-90deg);
     }
 
     .link-text {
@@ -361,6 +505,10 @@ main {
     svg {
         min-width: 5rem;
         max-width: 5rem;
+    }
+
+    .rotate-arrow {
+        transform: rotate(0deg);
     }
 
     .selected-border {
