@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="d-flex justify-content-center align-items-center">
+
+        <div id="container" class="d-flex">
+
+            <div id="calculator" class="d-flex justify-content-center align-items-center container mx-auto">
+                <div>
+                    <form action="">
+                        <label for="result"></label>
+                        <input type="text" id="result" name="result" readonly>
+                    </form>
+        
+                    <div id="buttons">
+                        <button id="percentage">❤️</button>
+                        <button id="square">√</button>
+                        <button id="delete-all">CE</button>
+                        <button id="delete">C</button>
+                        <button id="7">7</button>
+                        <button id="8">8</button>
+                        <button id="9">9</button>
+                        <button id="minus">-</button>
+                        <button id="4">4</button>
+                        <button id="5">5</button>
+                        <button id="6">6</button>
+                        <button id="divide">÷</button>
+                        <button id="1">1</button>
+                        <button id="2">2</button>
+                        <button id="3">3</button>
+                        <button id="multiply">x</button>
+                        <button id=".">.</button>
+                        <button id="0">0</button>
+                        <button id="=">=</button>
+                        <button id="plus">+</button>
+                    </div>
+                </div>
+                
+                
+            </div>
+    
+            
+            <div id="recent-calculations">
+                <h2 class="text-center">Recent Calculation</h2>
+                <ul id="calculations-list">
+                    <!-- JS -->
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+</body>
+
+</html>
