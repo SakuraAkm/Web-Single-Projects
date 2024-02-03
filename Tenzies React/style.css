@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+	font-family: 'Gill Sans', sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+
+.tenzies {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+    background-color: rgb(43, 43, 64);
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: rgb(187, 0, 255);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dice-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-block: 2rem;
+    column-gap: 2rem;
+    row-gap: 0.75rem;
+}
+
+.dice {
+    font-size: 1.5rem;
+    border: 2px solid white;
+    font-weight: 600;
+    display: inline-flex;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* PRESETS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.vh-100 {
+    height: 100vh;
+}
+
+.w-100{
+	width: 100%;
+}
+
+.container {
+    max-width: 90%;
+}
+
+.container2 {
+    max-width: 80%;
+}
+
+
+.mx-auto {
+    margin-inline: auto;
+}
+
+.ms-auto {
+    margin-inline-start: auto;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mx-1 {
+    margin-inline: 1rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+    .tenzies {
+        width: 90%;
+        height: 20em;
+        padding: 1rem;
+    }
+
+    .dice-container {
+        margin-block: 2rem;
+        column-gap: 1rem;
+        row-gap: 0.75rem;
+    }
+}
